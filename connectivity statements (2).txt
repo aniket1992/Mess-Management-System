@@ -1,0 +1,6 @@
+Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+Connection cn=DriverManager.getConnection("jdbc:odbc:MessData");
+Statement st=cn.createStatement();
+st.executeUpdate();
+
+where AccNo="+Integer.parseInt(jTextField1.getText())
